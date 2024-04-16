@@ -1,0 +1,30 @@
+// Create a component that fetches data from an API and displays it (6).
+import React, { useEffect, useState } from 'react'
+
+export default function Six() {
+
+    const [data, setData] = useState(null);
+
+    useEffect(()=> {
+        fetch('https://jsonplaceholder.typicode.com/posts/1')
+        .then((response)=> response.json())
+        // .then((data)=> console.log(data));
+        .then((json)=> setData(json));
+    },[])
+  return (
+    <div>
+        {
+            data? (
+                <div>
+                    <h1>Title: {data.title}</h1>
+                    <h2>Body: {data.body}</h2>
+                </div>
+            ) : (
+                <p>
+                    Loading
+                </p>
+            )
+        }
+    </div>
+  )
+}
