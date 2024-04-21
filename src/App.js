@@ -1,5 +1,6 @@
 import React from 'react'
-import Nine from './Nine'
+import Ten from './Ten'
+// import Nine from './Nine'
 // import Eight from './Eight'
 // import Seven from './Seven'
 // import Six from './Six'
@@ -20,7 +21,8 @@ export default function App() {
       {/* <Six /> */}
       {/* <Seven /> */}
       {/* <Eight /> */}
-      <Nine />
+      {/* <Nine /> */}
+      <Ten />
     </div>
   )
 }

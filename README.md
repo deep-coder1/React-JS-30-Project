@@ -78,4 +78,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <!-- (6). 0:28:41 Vid Time End -->
 <!-- (7). 0:32:20 Vid (7) Time End -->
 <!-- (8). 0:41:45 Vid (8) Time End / Simple to-do list (8) || React JS 30+ Project -->
-<!-- (8). 0:46:25 Vid (9) Time End / BG Change with Click (9) || React JS 30+ Project -->
+<!-- (9). 0:46:25 Vid (9) Time End / BG Change with Click (9) || React JS 30+ Project -->
+<!-- (10). 0:51:58 Vid (10) Time End / Routing (10) || React JS 30+ Project -->
