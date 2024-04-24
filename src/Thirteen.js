@@ -5,16 +5,47 @@ export default function Thirteen() {
   const [password, setPassword] = useState("");
   const [isRegistered, setIsRegistered] = useState(false);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [users, setUsers] = useState([]);
+
+  const handleAuthentication = () => {
+    if(isRegistered){
+        // Login
+        if(isRegistered){
+            const user = users.find((u)=> u.email && u.password === password);
+            if(user) {
+                setIsLoggedIn(true);
+            }
+            else {
+                alert('Login failed. Please check your credential')
+            }
+        }
+    }
+    else {
+        // Register
+        const newUser = {email, password};
+        setUsers([...users,newUser]);
+        localStorage.setItem('users', JSON.stringify([...users,newUser]));
+        setIsLoggedIn(true);
+    }
+  }
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+    setEmail('');
+    setPassword('');
+    
+}
 
   return (
     <div>
       {isLoggedIn ? (
         <div>
           <h2>Welcome , {email}!</h2>
-          <button>Logout</button>
+          <button onClick={handleLogout}>Logout</button>
         </div>
       ) : (
         <div>
+            <h2>{isLoggedIn ? 'Login' : 'Register'}</h2>
           <form>
             <input
               type="email"
@@ -26,7 +57,7 @@ export default function Thirteen() {
               placeholder="Password"
               onChange={(e) => setPassword(e.target.value)}
             />
-            <button>{isRegistered ? "Login" : "Register"}</button>
+            <button onClick={handleAuthentication}>{isRegistered ? "Login" : "Register"}</button>
           </form>
           <p>
             {isRegistered
