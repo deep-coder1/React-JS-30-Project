@@ -83,3 +83,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <!-- (11). 0:55:53 Vid (11) Time End / Random Quote (11) || React JS 30+ Project -->
 <!-- (12). 01:00:02 Vid (12) Time End / Upload Image (12) || React JS 30+ Project -->
 <!-- (13). 01:18:32 Vid (13) Time End / Login Registration (13) || React JS 30+ Project -->
+<!-- (14). 01:27:07 Vid (14) Time End / Login Registration (14) || React JS 30+ Project -->
