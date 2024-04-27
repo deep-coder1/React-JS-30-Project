@@ -1,5 +1,6 @@
 import React from 'react'
-import Sixteen from './Sixteen'
+import Seventeen from './Seventeen'
+// import Sixteen from './Sixteen'
 // import Fifteen from './Fifteen'
 // import Fourteen from './Fourteen'
 // import Thirteen from './Thirteen'
@@ -18,7 +19,7 @@ import Sixteen from './Sixteen'
 
 export default function App() {
 
-  const items = ['Item 1', 'Item 2', 'Item 3', 'Another Item', 'Another Item 2']
+  // const items = ['Item 1', 'Item 2', 'Item 3', 'Another Item', 'Another Item 2'] // 15, 16
   return (
     <div>
       {/* <One /> */}
@@ -36,7 +37,8 @@ export default function App() {
       {/* <Thirteen /> */}
       {/* <Fourteen /> */}
       {/* <Fifteen items={items} /> */}
-      <Sixteen items={items} itemsPerPage={2} />
+      {/* <Sixteen items={items} itemsPerPage={2} /> */}
+      <Seventeen />
     </div>
   )
 }
