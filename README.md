@@ -87,3 +87,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <!-- (15). 01:33:30 Vid (15) Time End / Search Items (15) || React JS 30+ Project -->
 <!-- (16). 01:41:18 Vid (16) Time End / PAGINATION (16) || React JS 30+ Project -->
 <!-- (17). 01:45:29 Vid (17) Time End / Color Picker (17) || React JS 30+ Project -->
+<!-- (18). 01:54:28 Vid (18) Time End / Responsive menu (18) || React JS 30+ Project -->
