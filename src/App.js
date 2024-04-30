@@ -1,5 +1,6 @@
 import React from 'react'
-import Eighteen from './Eighteen'
+import Nineteen from './Nineteen'
+// import Eighteen from './Eighteen'
 // import Seventeen from './Seventeen'
 // import Sixteen from './Sixteen'
 // import Fifteen from './Fifteen'
@@ -40,7 +41,8 @@ export default function App() {
       {/* <Fifteen items={items} /> */}
       {/* <Sixteen items={items} itemsPerPage={2} /> */}
       {/* <Seventeen /> */}
-      <Eighteen />
+      {/* <Eighteen /> */}
+      <Nineteen />
     </div>
   )
 }
