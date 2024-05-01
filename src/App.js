@@ -1,5 +1,6 @@
 import React from 'react'
 import Nineteen from './Nineteen'
+import NineteenComp from './NineteenComp'
 // import Eighteen from './Eighteen'
 // import Seventeen from './Seventeen'
 // import Sixteen from './Sixteen'
@@ -42,7 +43,12 @@ export default function App() {
       {/* <Sixteen items={items} itemsPerPage={2} /> */}
       {/* <Seventeen /> */}
       {/* <Eighteen /> */}
-      <Nineteen />
+      <ThemeProvider>
+        <div className='App'>
+          <Nineteen />
+        <NineteenComp />
+        </div>
+      </ThemeProvider>
     </div>
   )
 }
