@@ -1,6 +1,7 @@
 import React from 'react'
 import Nineteen from './Nineteen'
 import NineteenComp from './NineteenComp'
+import { ThemeProvider } from './ThemeContext'
 // import Eighteen from './Eighteen'
 // import Seventeen from './Seventeen'
 // import Sixteen from './Sixteen'
