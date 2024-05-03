@@ -1,7 +1,8 @@
 import React from 'react'
-import Nineteen from './Nineteen'
-import NineteenComp from './NineteenComp'
-import { ThemeProvider } from './ThemeContext'
+import Twenty from './Twenty'
+// import Nineteen from './Nineteen'
+// import NineteenComp from './NineteenComp'
+// import { ThemeProvider } from './ThemeContext'
 // import Eighteen from './Eighteen'
 // import Seventeen from './Seventeen'
 // import Sixteen from './Sixteen'
@@ -44,12 +45,13 @@ export default function App() {
       {/* <Sixteen items={items} itemsPerPage={2} /> */}
       {/* <Seventeen /> */}
       {/* <Eighteen /> */}
-      <ThemeProvider>
+      {/* <ThemeProvider>
         <div className='App'>
           <Nineteen />
         <NineteenComp />
         </div>
-      </ThemeProvider>
+      </ThemeProvider> */}
+      <Twenty />
     </div>
   )
 }
