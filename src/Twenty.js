@@ -3,6 +3,10 @@ import React from 'react'
 
 export default function Twenty() {
 
+    const addToCart = (item) => {
+        //
+    }
+
     const products = [
         {id: 1,name:'Product A'},
         {id: 2,name:'Product B'},
@@ -15,7 +19,7 @@ export default function Twenty() {
         <ul>
             {products.map((product)=> (
                 <li key={product.id}>
-                    {product.name}
+                    {product.name} <button onClick={()=>addToCart(product)}>Add to Cart</button>
                 </li>
             ))}
         </ul>
