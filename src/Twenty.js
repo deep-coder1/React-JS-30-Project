@@ -1,8 +1,10 @@
 // Implement a shopping cart using context and a reducer, with features like adding, removing, and updating items in the cart.
 import React from 'react'
+import { useCart } from './CartContext'
 
 export default function Twenty() {
-
+    
+    const {cartState,cartDispatch} = useCart();
     const addToCart = (item) => {
         //
     }
