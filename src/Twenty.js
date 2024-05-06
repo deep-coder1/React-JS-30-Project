@@ -6,7 +6,7 @@ export default function Twenty() {
     
     const {cartState,cartDispatch} = useCart();
     const addToCart = (item) => {
-        //
+        cartDispatch({type:'ADD_TO_CART',payload:{...item,quantity:1}})
     }
 
     const products = [
@@ -17,7 +17,19 @@ export default function Twenty() {
   return (
     <div>
         <h2>Shopping Cart</h2>
+        {cartState.cartItems.map((item)=>(
+            <li key={item.id}>
+                {item.name} - {item.quantity}
+            </li>
+        ))}
         <h2>Product List</h2>
+        <ul>
+            {cartState.cartItems.map((item)=>{
+                <li>
+                    {item.name}
+                </li>
+            })}
+        </ul>
         <ul>
             {products.map((product)=> (
                 <li key={product.id}>
