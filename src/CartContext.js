@@ -15,6 +15,11 @@ export function CartProvider({ children }) {
           ...state,
           cartItems: [...state.cartItems, action.payload],
         };
+        case 'UPDATE_QUANTITY':
+          return {
+            ...state,
+            cartItems:state.cartItems.map((item)=> item.id === action.payload.id?{...item,quantity,quantity:action.payload.quantity}:item);
+          }
     }
   }
 

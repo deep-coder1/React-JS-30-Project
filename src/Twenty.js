@@ -5,7 +5,13 @@ import { useCart } from './CartContext'
 export default function Twenty() {
     
     const {cartState,cartDispatch} = useCart();
+
     const addToCart = (item) => {
+        const existingCartItem = cartState.cartItems.find((cartItem)=> cartItem.id === item.id);
+
+        if(existingCartItem){
+            cartDispatch({type:'UPDATE_QUANTITY', payload:{id:item.id,quantity:existingCartItem.quantity+1}})
+        }
         cartDispatch({type:'ADD_TO_CART',payload:{...item,quantity:1}})
     }
 
