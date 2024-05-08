@@ -18,7 +18,7 @@ export function CartProvider({ children }) {
         case 'UPDATE_QUANTITY':
           return {
             ...state,
-            cartItems:state.cartItems.map((item)=> item.id === action.payload.id?{...item,quantity,quantity:action.payload.quantity}:item);
+            cartItems:state.cartItems.map((item)=>item.id=== action.payload.id?{...item,quantity:action.payload.quantity}:item)
           }
     }
   }
