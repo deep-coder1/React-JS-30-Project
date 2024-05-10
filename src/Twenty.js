@@ -24,7 +24,11 @@ export default function Twenty() {
     if(quantity>0){
         cartDispatch({type:'UPDATE_QUANTITY', payload: { id: itemId, quantity}})
     }
-  }
+  };
+
+  const removeFromCart = (itemId) => {
+    cartDispatch({type: 'REMOVE_FROM_CART', payload:itemId})
+  };
 
   const products = [
     { id: 1, name: "Product A" },
@@ -39,7 +43,7 @@ export default function Twenty() {
           {item.name} - {item.quantity} 
           <button onClick={()=> updateQuantity(item.id, item.quantity + 1)}>+</button>
           <button onClick={()=> updateQuantity(item.id, item.quantity - 1)}>-</button>
-          <button>Remove</button>
+          <button onClick={()=> removeFromCart(item.id)}>Remove</button>
         </li>
       ))}
       <h2>Product List</h2>
