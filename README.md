@@ -90,3 +90,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <!-- (18). 01:54:28 Vid (18) Time End / Responsive menu (18) || React JS 30+ Project -->
 <!-- (19). 02:03:08 Vid (19) Time End / Switch Light and dark theme (19) || React JS 30+ Project -->
 <!-- (20). 30:10 / 30:09 Vid (20) Time End / Shopping Cart (20) || React JS 30+ Project -->
+<!-- (21). 03:07 / 30:09 Vid (20) Time End / Counter App using useReducer (21) || React JS 30+ Project -->

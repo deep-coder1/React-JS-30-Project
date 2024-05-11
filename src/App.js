@@ -1,6 +1,7 @@
 import React from 'react'
-import Twenty from './Twenty'
-import { CartProvider } from './CartContext'
+import TwentyOne from './TwentyOne'
+// import Twenty from './Twenty'
+// import { CartProvider } from './CartContext'
 // import Nineteen from './Nineteen'
 // import NineteenComp from './NineteenComp'
 // import { ThemeProvider } from './ThemeContext'
@@ -52,9 +53,10 @@ export default function App() {
         <NineteenComp />
         </div>
       </ThemeProvider> */}
-      <CartProvider>
+      {/* <CartProvider>
         <Twenty />
-      </CartProvider>
+      </CartProvider> */}
+      <TwentyOne />
     </div>
   )
 }
