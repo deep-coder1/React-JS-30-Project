@@ -91,4 +91,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <!-- (19). 02:03:08 Vid (19) Time End / Switch Light and dark theme (19) || React JS 30+ Project -->
 <!-- (20). 30:10 / 30:09 Vid (20) Time End / Shopping Cart (20) || React JS 30+ Project -->
 <!-- (21). 06:55 / 30:09 Vid (21) Time End / Counter App using useReducer (21) || React JS 30+ Project -->
-<!-- (22). 03:22 / 30:09 Vid (202) Time End / To-Do List using useReducer (22) || React JS 30+ Project -->
+<!-- (22). 06:39 / 30:09 Vid (202) Time End / To-Do List using useReducer (22) || React JS 30+ Project -->

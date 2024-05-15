@@ -1,20 +1,28 @@
 // Create a simple to-do list using useReducer to manage tasks. 
+import { type } from '@testing-library/user-event/dist/type';
 import React, { useReducer } from 'react'
+import { useState } from 'react';
 
 export default function TwentyTwo() {
 
     const taskReducer = (state,action) => {
-        case 'ADD_TASK'
+        switch(action.type){
+            case 'ADD_TASK':
+                return [...state,{id:Date.now(),text:action.payload,completed:false}]
+        }
     }
 
-    const [state,dispatch] = useReducer{taskReducer,[]};
+    const [state,dispatch] = useReducer(taskReducer,[]);
 
-    const addTask = () => {}
+    const [taskText,setTaskText] = useState('');
+    const addTask = () => {
+        dispatch({type:'ADD_TASK',payload:taskText});
+    }
 
   return (
     <div>
         <h1>Todo List</h1>
-        <input type='text' placeholder='Add new Task' />
+        <input type='text' value={taskText} onChange={(e)=>setTaskText(e.target.value)} placeholder='Add new Task' />
         <button onClick={addTask}>Add</button>
     </div>
   )
