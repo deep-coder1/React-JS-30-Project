@@ -11,6 +11,9 @@ export default function TwentyTwo() {
           ...state,
           { id: Date.now(), text: action.payload, completed: false },
         ];
+
+        case 'REMOVE':
+            return state.filter((task)=> task.id!== action.payload)
     }
   };
 
@@ -35,6 +38,7 @@ export default function TwentyTwo() {
         {tasks.map((task) => (
           <li key={task.id}>
             <span>{task.text}</span>
+            <button onClick={()=> dispatch({type:'REMOVE', payload:task.id})}>REMOVE</button>
           </li>
         ))}
       </ul>
