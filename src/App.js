@@ -1,5 +1,6 @@
 import React from 'react'
-import TwentyTwo from './TwentyTwo'
+import TwentyThree from './TwentyThree'
+// import TwentyTwo from './TwentyTwo'
 // import TwentyOne from './TwentyOne'
 // import Twenty from './Twenty'
 // import { CartProvider } from './CartContext'
@@ -58,7 +59,8 @@ export default function App() {
         <Twenty />
       </CartProvider> */}
       {/* <TwentyOne /> */}
-      <TwentyTwo />
+      {/* <TwentyTwo /> */}
+      <TwentyThree />
     </div>
   )
 }
