@@ -92,4 +92,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <!-- (20). 30:10 / 30:09 Vid (20) Time End / Shopping Cart (20) || React JS 30+ Project -->
 <!-- (21). 06:55 / 30:09 Vid (21) Time End / Counter App using useReducer (21) || React JS 30+ Project -->
 <!-- (22). 10:05 / 13:34 Vid (22) Time End / To-Do List using useReducer (22) || React JS 30+ Project -->
-<!-- (23). 10:05 / 13:13 Vid (23) Time End / Pagination using useReducer (23) || React JS 30+ Project -->
+<!-- (23). 01:26 / 13:13 Vid (23) Time End / Pagination using useReducer (23) || React JS 30+ Project -->
