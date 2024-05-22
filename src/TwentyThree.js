@@ -22,11 +22,22 @@ export default function TwentyThree() {
     console.log(data);
 
     useEffect(()=> {
-      dispatchEvent({type:'SET_TOTAL_ITEMS',payload:data.length})
+      dispatch({type:'SET_TOTAL_ITEMS',payload:data.length})
     },[data])
+
+    const startIndex = (paginationState.currentPage-1)*itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+
+    const displayedItems = data.slice(startIndex,endIndex);
+
   return (
     <div>
         <h1>Pagination Example</h1>
+        <ul>
+          {displayedItems.map((item,index)=> (
+            <li key={index}>{item}</li>
+          ))}
+        </ul>
     </div>
   )
 }
