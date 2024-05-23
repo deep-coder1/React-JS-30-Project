@@ -35,9 +35,16 @@ export default function TwentyThree() {
         <h1>Pagination Example</h1>
         <ul>
           {displayedItems.map((item,index)=> (
-            <li key={index}>{item}</li>
+            <li key={index}>
+              {item}
+            </li>
           ))}
         </ul>
+        <div>
+          <button onClick={()=> handlePageClick(paginationState.currentPage - 1)}>Previous</button>
+          <button>Next</button>
+        </div>
+
     </div>
   )
 }
