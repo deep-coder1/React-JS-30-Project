@@ -1,5 +1,6 @@
 import React from 'react'
-import TwentyThree from './TwentyThree'
+import TwentyFour from './TwentyFour'
+// import TwentyThree from './TwentyThree'
 // import TwentyTwo from './TwentyTwo'
 // import TwentyOne from './TwentyOne'
 // import Twenty from './Twenty'
@@ -60,7 +61,8 @@ export default function App() {
       </CartProvider> */}
       {/* <TwentyOne /> */}
       {/* <TwentyTwo /> */}
-      <TwentyThree />
+      {/* <TwentyThree /> */}
+      <TwentyFour />
     </div>
   )
 }
