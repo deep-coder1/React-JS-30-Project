@@ -1,6 +1,7 @@
 import React from 'react'
-import TwentyFour from './TwentyFour'
-import { AuthProvider } from './AuthContext'
+import TwentyFive from './TwentyFive'
+// import TwentyFour from './TwentyFour'
+// import { AuthProvider } from './AuthContext'
 // import TwentyThree from './TwentyThree'
 // import TwentyTwo from './TwentyTwo'
 // import TwentyOne from './TwentyOne'
@@ -63,9 +64,10 @@ export default function App() {
       {/* <TwentyOne /> */}
       {/* <TwentyTwo /> */}
       {/* <TwentyThree /> */}
-      <AuthProvider>
+      {/* <AuthProvider>
         <TwentyFour />
-      </AuthProvider>
+      </AuthProvider> */}
+      <TwentyFive />
     </div>
   )
 }
