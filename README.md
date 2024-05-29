@@ -94,4 +94,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <!-- (22). 10:05 / 13:34 Vid (22) Time End / To-Do List using useReducer (22) || React JS 30+ Project -->
 <!-- (23). 13:13 / 13:13 Vid (23) Time End / Pagination using useReducer (23) || React JS 30+ Project -->
 <!-- (24). 09:09 / 09:09 Vid (24) Time End / User Authentication using useContext (24) || React JS 30+ Project -->
-<!-- (25). 01:09 / 13:10 Vid (25) Time End / Draggable Component (25) || React JS 30+ Project -->
+<!-- (25). 03:20 / 13:10 Vid (25) Time End / Draggable Component (25) || React JS 30+ Project -->
