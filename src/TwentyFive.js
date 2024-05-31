@@ -3,7 +3,7 @@ import React, { useReducer } from 'react'
 
 function boxReducer(state,action){
   switch(action.type){
-    case 'MOVE'
+    case 'MOVE':
     return {
       ...state,
       left:action.payload.left,
@@ -18,15 +18,18 @@ export default function TwentyFive() {
 
   const [boxState,dispatch] = useReducer(boxReducer,{left:0,top:0});
 
+  let isDragging = false;
   let initialX = 0;
   let initialY = 0;
 
   const handleMouseDown = (e) => {
-    let isDragging = true;
+    isDragging = true;
+    initialX = e.ClientX - boxState.left;
+    initialY = e.ClientY - boxState.top;
   }
 
   const handleMouseUp = (e) => {
-    let isDragging = false;
+    isDragging = false;
   }
 
   const handleMouseMove = (e) => {
@@ -43,6 +46,7 @@ export default function TwentyFive() {
       onMouseDown={handleMouseDown}
       onMouseUp={handleMouseUp}
       onMouseMove={handleMouseMove}
+      style={{left:boxState.left,top:boxState.top,position:'absolute'}}
     >
         Drag Me
     </div>
