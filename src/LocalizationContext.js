@@ -1,8 +1,14 @@
-import { createContext } from "react";
+import { createContext, useContext, useState } from "react";
 
 const LocalizationContext  = createContext();
 
+export const useLocalization = () => {
+    return useContext(LocalizationContext)
+}
+
 export function LocalizationProvider({children}){
+
+    const [local,setLocal] = useState('en');
 
     const localizedString = {
         en:{
@@ -16,7 +22,7 @@ export function LocalizationProvider({children}){
     };
 
     return (
-        <LocalizationContext.Provider>
+        <LocalizationContext.Provider value={{setLocale,locale}}>
             {children}
         </LocalizationContext.Provider>
     )

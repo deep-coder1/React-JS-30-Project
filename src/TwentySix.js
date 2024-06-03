@@ -6,7 +6,7 @@ export default function TwentySix() {
   return (
     <div>
         <button>English</button>
-        <button>Spanish</button>
+        <button>Espanol</button>
     </div>
   )
 }
