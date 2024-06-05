@@ -8,7 +8,7 @@ export const useLocalization = () => {
 
 export function LocalizationProvider({children}){
 
-    const [local,setLocal] = useState('en');
+    const [locale,setLocale] = useState('en');
 
     const localizedString = {
         en:{
@@ -16,13 +16,17 @@ export function LocalizationProvider({children}){
             welcome:'Welcome to my app.'
         },
         es:{
-            greeting:'Hello mundo!',
+            greeting:'Hola mundo!',
             welcome:'Bienvenido a mi application.'
         }
     };
 
+    const translate = (key) => {
+        return localizedString[locale][key]
+    }
+
     return (
-        <LocalizationContext.Provider value={{setLocale,locale}}>
+        <LocalizationContext.Provider value={{setLocale,locale,translate}}>
             {children}
         </LocalizationContext.Provider>
     )
