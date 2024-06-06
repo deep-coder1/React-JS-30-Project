@@ -1,6 +1,7 @@
 import React from 'react'
-import TwentySix from './TwentySix'
-import { LocalizationProvider } from './LocalizationContext'
+import TwentySeven from './TwentySeven'
+// import TwentySix from './TwentySix'
+// import { LocalizationProvider } from './LocalizationContext'
 // import TwentyFive from './TwentyFive'
 // import TwentyFour from './TwentyFour'
 // import { AuthProvider } from './AuthContext'
@@ -70,9 +71,10 @@ export default function App() {
         <TwentyFour />
       </AuthProvider> */}
       {/* <TwentyFive /> */}
-      <LocalizationProvider>
+      {/* <LocalizationProvider>
         <TwentySix />
-      </LocalizationProvider>
+      </LocalizationProvider> */}
+      <TwentySeven />
     </div>
   )
 }
