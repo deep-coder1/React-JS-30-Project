@@ -96,4 +96,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <!-- (24). 09:09 / 09:09 Vid (24) Time End / User Authentication using useContext (24) || React JS 30+ Project -->
 <!-- (25). 13:10 / 13:10 Vid (25) Time End / Draggable Component (25) || React JS 30+ Project -->
 <!-- (26). 10:25 / 10:25 Vid (26) Time End / Translation App (26) || React JS 30+ Project -->
-<!-- (27). 02:57 / 04:41 Vid (27) Time End / Fetch Multiple API (27) || React JS 30+ Project -->
+<!-- (27). 04:41 / 04:41 Vid (27) Time End / Fetch Multiple API (27) || React JS 30+ Project -->
