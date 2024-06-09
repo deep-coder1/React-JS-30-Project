@@ -8,7 +8,23 @@ import React, { useState } from 'react'
 
 export default function TwentyEight() {
 
-    const [state,setState] = useState({})
+    const [state,setState] = useState({
+      count:0,
+      text:'Hello World',
+      isActive:true
+    })
+
+    function incrementCount () {
+      //
+    }
+
+    function changeText () {
+      // 
+    }
+
+    function toggleActive () {
+      // 
+    }
 
   return (
     <div>
@@ -17,9 +33,9 @@ export default function TwentyEight() {
         <p>Text:</p>
         <p>Active:</p>
 
-        <button>Increment</button>
-        <button>Change Text</button>
-        <button>Toggle Active</button>
+        <button onClick={incrementCount}>Increment</button>
+        <button onClick={changeText}>Change Text</button>
+        <button onClick={toggleActive}>Toggle Active</button>
 
     </div>
   )

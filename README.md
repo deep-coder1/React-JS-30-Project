@@ -97,4 +97,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <!-- (25). 13:10 / 13:10 Vid (25) Time End / Draggable Component (25) || React JS 30+ Project -->
 <!-- (26). 10:25 / 10:25 Vid (26) Time End / Translation App (26) || React JS 30+ Project -->
 <!-- (27). 04:41 / 04:41 Vid (27) Time End / Fetch Multiple API (27) || React JS 30+ Project -->
-<!-- (28). 02:15 / 06:37 Vid (28) Time End / Multiple states in One State (28) || React JS 30+ Project -->
+<!-- (28). 04:15 / 06:37 Vid (28) Time End / Multiple states in One State (28) || React JS 30+ Project -->
