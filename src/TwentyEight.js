@@ -15,23 +15,23 @@ export default function TwentyEight() {
     })
 
     function incrementCount () {
-      //
+      setState({...state,count:state.count+1})
     }
 
     function changeText () {
-      // 
+      setState({...state,text:' Updated Text'})
     }
 
     function toggleActive () {
-      // 
+      setState({...state,isActive:!state.isActive})
     }
 
   return (
     <div>
         <h1>Multiple State Example</h1>
-        <p>Count:</p>
-        <p>Text:</p>
-        <p>Active:</p>
+        <p>Count:{state.count}</p>
+        <p>Text:{state.text}</p>
+        <p>Active:{state.isActive ? 'Yes' : 'No'}</p>
 
         <button onClick={incrementCount}>Increment</button>
         <button onClick={changeText}>Change Text</button>
