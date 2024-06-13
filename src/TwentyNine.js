@@ -14,7 +14,13 @@ const imageReducer = (state, action) => {
     case 'NEXT_IMAGE':
         return {
             currentImageIndex: state.currentImageIndex +1
-        }
+        };
+    case 'PREVIOUS_IMAGE':
+      return{
+        currentImageIndex: state.currentImageIndex -1
+      }
+      default :
+      return state
   }
 };
 
@@ -28,11 +34,13 @@ const images = [
 export default function TwentyNine() {
   const [state, dispatch] = useReducer(imageReducer, initialState);
 
+  const currentImage = images[state.currentImageIndex];
+
   return (
     <div>
       <h1>ImageGallery</h1>
       <div>
-        <img src="" />
+        <img src={currentImage} />
       </div>
       <div>
         <button onClick={()=> dispatch({type:'PREVIOUS_IMAGE'})}>Previous</button>
