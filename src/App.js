@@ -1,5 +1,6 @@
 import React from 'react'
-import TwentyNine from './TwentyNine'
+import Thirty from './Thirty'
+// import TwentyNine from './TwentyNine'
 // import TwentyEight from './TwentyEight'
 // import TwentySeven from './TwentySeven'
 // import TwentySix from './TwentySix'
@@ -78,7 +79,8 @@ export default function App() {
       </LocalizationProvider> */}
       {/* <TwentySeven /> */}
       {/* <TwentyEight /> */}
-      <TwentyNine />
+      {/* <TwentyNine /> */}
+      <Thirty />
     </div>
   )
 }

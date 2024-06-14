@@ -99,3 +99,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 <!-- (27). 04:41 / 04:41 Vid (27) Time End / Fetch Multiple API (27) || React JS 30+ Project -->
 <!-- (28). 06:37 / 06:37 Vid (28) Time End / Multiple states in One State (28) || React JS 30+ Project -->
 <!-- (29). 07:36 / 12:17 Vid (29) Time End / Image Gallery using useReducer (29) || React JS 30+ Project -->
+<!-- (30). 07:36 / 12:17 Vid (30) Time End / Image Gallery using useReducer (Second Video) (30) || React JS 30+ Project -->
