@@ -3,6 +3,8 @@
 
 import React from 'react'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Home30 from './Home30'
+import About30 from './About30'
 
 export default function Thirty() {
   return (
@@ -10,9 +12,8 @@ export default function Thirty() {
 
     <div>
         <Routes>
-            <Route path='/'></Route>
-            <Route></Route>
-            <Route></Route>
+            <Route path='/' element={<Home30/>}></Route>
+            <Route path='/about' element={<About30/>}></Route>
         </Routes>
     </div>
     </BrowserRouter>
